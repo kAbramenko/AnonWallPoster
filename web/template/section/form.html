@@ -1,0 +1,22 @@
+{{ define "form" }}
+
+<form name="feedback" id="feedback-form" class="decor">
+    <div class="form-inner container">
+        <textarea name="msg" placeholder="Сообщение..." rows="6"></textarea>
+        <div class="button-group-area">
+            <div class="example-2">
+                    <input id = "file" class="input-file" type="file" name="photo" multiple accept=".jpg,.jpeg,.png,.gif,.WebP"></input>
+                    <label for="file" class="btn btn-tertiary js-labelFile">
+                        <i class="icon fa fa-check"></i>
+                        <span class="js-fileName">Загрузить изображения</span>
+                    </label>
+            </div>
+            <div id="load_bar" class="cssload-container" style="display: none">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+            <input id="submit_button" type="submit" value="Отправить анонимную сплетню" class="genric-btn send"></input>
+        </div>
+    </div>
+</form>
+
+{{ end }}

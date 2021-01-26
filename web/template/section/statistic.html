@@ -1,0 +1,35 @@
+{{ define "statistic" }}
+
+<div class="row align-items-center">
+    {{ if .Stats }}
+    {{range .Stats.Response }}
+    <div class="col single-fact">
+        <h2>{{.Visitors.Visitors}}</h2>
+        <p>Посещений</p>
+    </div>
+    <div class="col single-fact">
+        <h2>{{.Activity.Comments }}</h2>
+        <p>Сплетен</p>
+    </div>
+    <div class="col single-fact">
+        <h2>{{.Activity.Subscribed}}</h2>
+        <p>Подписчиков</p>
+    </div>
+    <div class="col single-fact">
+        <h2>{{.Activity.Likes}}</h2>
+        <p>Лайков</p>
+    </div>
+    {{ end }}
+    {{ end }}
+    <div class="col single-fact">
+        <h2>{{.Adequacy}}%</h2>
+        <p>Адекватность админа</p>
+    </div>
+    <div class="col single-fact">
+        <h2>{{.Health}}</h2>
+        <p>Собираем на лечение</p>
+    </div>
+</div>
+
+
+{{ end }}

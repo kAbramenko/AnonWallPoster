@@ -1,0 +1,5 @@
+prod
+__debug_bin
+/.vscode
+/prod.yaml
+/config.yaml

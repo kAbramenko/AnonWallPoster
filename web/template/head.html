@@ -1,0 +1,155 @@
+{{ define "head" }}
+
+<head>
+    <style>
+        .example-2 .btn-tertiary {
+            color: #555;
+            padding: 0;
+            line-height: 35px;
+            width: 100%;
+            margin: auto;
+            display: block;
+            border: 1px solid #555;
+            border-radius: 0px;
+        }
+
+        .example-2 .btn-tertiary:hover,
+        .example-2 .btn-tertiary:focus {
+            color: #888;
+            border-color: #888
+        }
+
+        .example-2 .input-file {
+            width: .1px;
+            height: .1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1
+        }
+
+        .example-2 .input-file+.js-labelFile {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0 10px;
+            cursor: pointer
+        }
+
+        .example-2 .input-file+.js-labelFile .icon:before {
+            content: "\f093"
+        }
+
+        .example-2 .input-file+.js-labelFile.has-file .icon:before {
+            content: "\f00c";
+            color: #5AAC7B
+        }
+
+        .cssload-container {
+            width: 100%;
+            height: 49px;
+            text-align: center;
+        }
+
+        .cssload-speeding-wheel {
+            width: 49px;
+            height: 49px;
+            margin: 0 auto;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 50%;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            animation: cssload-spin 575ms infinite linear;
+            -o-animation: cssload-spin 575ms infinite linear;
+            -ms-animation: cssload-spin 575ms infinite linear;
+            -webkit-animation: cssload-spin 575ms infinite linear;
+            -moz-animation: cssload-spin 575ms infinite linear;
+        }
+
+        @keyframes cssload-spin {
+            100% {
+                transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-o-keyframes cssload-spin {
+            100% {
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-ms-keyframes cssload-spin {
+            100% {
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes cssload-spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes cssload-spin {
+            100% {
+                -moz-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .decor {
+            position: relative;
+            width: 100%;
+        }
+
+        .form-inner {
+            padding: 15px;
+        }
+
+        .form-inner textarea {
+            display: block;
+            width: 100%;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            margin-top: 70px;
+            border-radius: 10px;
+            background: #ffffff;
+            line-height: 40px;
+            border: 1px solid #555;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .form-inner textarea {
+            resize: none;
+        }
+    </style>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="static/img/fav.png">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>{{.Name}} osnk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!--CSS============================================= -->
+    <link rel="stylesheet" href="static/css/linearicons.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <link rel="stylesheet" href="static/css/nice-select.css">
+    <link rel="stylesheet" href="static/css/hexagons.min.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.css">
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+
+{{ end }}

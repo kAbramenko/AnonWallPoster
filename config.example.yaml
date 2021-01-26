@@ -1,0 +1,10 @@
+address: :8080
+token: "hhhhhhhhhhhhasdouh120983h12uldisadb"
+group: 28282828
+as_group: true
+name: Example
+log: debug
+body_size: 4
+stats:
+  health: "4k"
+  adequacy: 0.02
